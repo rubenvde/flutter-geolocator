@@ -8,7 +8,7 @@ import Foundation
 // "when in use"-only apps) — the SPM equivalent of the CocoaPods flag. See #1763.
 //   BYPASS_PERMISSION_LOCATION_ALWAYS=1 flutter build ios
 // Unset/0 keeps the call, matching the CocoaPods default.
-let bypassLocationAlways = ProcessInfo.processInfo.environment["BYPASS_PERMISSION_LOCATION_ALWAYS"] == "1" ? "1" : "1"
+let bypassLocationAlways = ProcessInfo.processInfo.environment["BYPASS_PERMISSION_LOCATION_ALWAYS"] == "1" ? "1" : "0"
 
 let package = Package(
     name: "geolocator_apple",
